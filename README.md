@@ -1,9 +1,12 @@
 # Simple Backup Tool
 
 ## Description
-This is a simple multi-platform GUI backup tool written in Python. It uses `rsync` on Unix-based systems and `robocopy` on Windows to perform the backups.
 
-The application allows you to select multiple source directories and a single destination directory for the backup. It also lets you specify directories to exclude by its name from the backup.
+This is a simple multi-platform GUI backup tool written in Python. It uses `rsync` on Unix-based systems and `robocopy` on Windows to perform the backups. 
+
+lease note, this tool simply **copies** files from the source directories to the destination directory, maintaining the original directory structure. It **does not** perform any alterations on the files such as compression or encryption, nor does it remove files from the source directories. It is strictly a tool for creating a duplicate copy of your files.
+
+The application allows you to select multiple source directories and a single destination directory for the backup. It also lets you specify directories to exclude from the backup. 
 
 ## Prerequisites
 
