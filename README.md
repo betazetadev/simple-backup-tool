@@ -27,4 +27,6 @@ The application allows you to select multiple source directories and a single de
 
 ## License
 
-This project is licensed under the terms of the MIT license.
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
+
+[<img src="bmc_qr.png">](https://www.buymeacoffee.com/betazetadev "Buy me a coffee if you liked it")
