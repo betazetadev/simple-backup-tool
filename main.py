@@ -27,8 +27,8 @@ class BackupApp:
         dst_button = tk.Button(self.root, text="Select Destination Directory", command=self.select_dst_dir)
         dst_button.pack()
 
-        self.dst_text = tk.Text(self.root, height=2)
-        self.dst_text.pack()
+        self.target_label = tk.Label(root, text="No target folder selected")
+        self.target_label.pack()
 
         exclude_label = tk.Label(self.root, text="Exclude Directories (comma separated):")
         exclude_label.pack()
@@ -53,7 +53,7 @@ class BackupApp:
         dir = filedialog.askdirectory()
         if dir:
             self.dst_dir.set(dir)
-            self.dst_text.insert(tk.END, dir + '\n')
+            self.target_label.config(text=f"Destination: {self.dst_dir.get()}")
 
     def start_backup_thread(self):
         threading.Thread(target=self.run_backup, daemon=True).start()
